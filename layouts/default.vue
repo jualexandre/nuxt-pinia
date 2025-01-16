@@ -1,13 +1,15 @@
 <template>
-  <div>
-    <header>
+  <div class="m-8">
+    <header class="wrapper flex justify-between">
       <NuxtLink to="/">
-        <h1>Adventure Store</h1>
+        <h1 class="text-secondary text-5xl">Adventure Store</h1>
       </NuxtLink>
-      <NuxtLink to="/cart">Cart</NuxtLink>
+      <NuxtLink to="/cart">
+        <span class="material-icons-outlined text-secondary text-5xl">shopping_bag</span>
+      </NuxtLink>
     </header>
 
-    <div>
+    <div class="wrapper">
       <slot />
     </div>
   </div>
