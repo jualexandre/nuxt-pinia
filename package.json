@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "server": "json-server --watch data/db.json --port 3001"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.13.1",
@@ -16,6 +17,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@types/json-server": "^0.14.7",
+    "json-server": "^1.0.0-beta.3",
     "prettier": "^3.4.2"
   }
 }
