@@ -1,4 +1,4 @@
-# Nuxt Minimal Starter
+# nuxt-pinia
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -36,6 +36,22 @@ yarn dev
 
 # bun
 bun run dev
+```
+
+Start the json-server on `http://localhost:3001`:
+
+```bash
+# npm
+npm run server
+
+# pnpm
+pnpm server
+
+# yarn
+yarn server
+
+# bun
+bun run server
 ```
 
 ## Production
