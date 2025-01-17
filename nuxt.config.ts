@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
   app: {
     head: {
       link: [
@@ -16,5 +16,8 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  pinia: {
+    storesDirs: ['./stores/**'],
   },
 })

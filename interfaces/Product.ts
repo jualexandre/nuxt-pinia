@@ -5,3 +5,7 @@ export interface Product {
   img: string
   id: number
 }
+
+export interface ProductWithQuantity extends Product {
+  quantity: number
+}

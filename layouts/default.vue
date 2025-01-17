@@ -6,6 +6,9 @@
       </NuxtLink>
       <NuxtLink to="/cart">
         <span class="material-icons-outlined text-secondary text-5xl">shopping_bag</span>
+        <span class="bg-white py-1 px-2 rounded-2xl font-bold badge">{{
+          cartStore.numberOfProducts
+        }}</span>
       </NuxtLink>
     </header>
 
@@ -15,6 +18,16 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useCartStore } from '~/stores/cart'
 
-<style scoped></style>
+const cartStore = useCartStore()
+cartStore.getCart()
+</script>
+
+<style scoped>
+.badge {
+  position: relative;
+  left: -15px;
+}
+</style>

@@ -15,7 +15,6 @@
 import type { Product } from '~/interfaces/Product'
 
 const { data: products } = await useFetch<Product[]>('http://localhost:3001/products')
-console.log(products)
 </script>
 
 <style scoped></style>
